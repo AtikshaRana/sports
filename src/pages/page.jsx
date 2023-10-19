@@ -40,10 +40,10 @@ export default function Page() {
           <p className='text-white text-lg md:text-xl tracking-widest'>Get live updates, scores, and news from your favorite sports</p>
         </div>
         <div className="sports bg-brown mb-20">
-          <ul className='flex flex-wrap py-4 justify-center'>
+          <ul className='flex flex-wrap justify-center py-2'>
             {sports.map((sport, index) => (
               <li key={index} className="w-full md:w-auto text-center mb-4 md:mb-0">
-                <Link className='text-white text-xl mx-5 py-1 ' href={sport.src}>
+                <Link className='text-white text-xl mx-5 py-3 px-3 hover:text-green hover:bg-white inline-block' href={sport.src}>
                   {sport.name}
                 </Link>
               </li>
