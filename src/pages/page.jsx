@@ -5,24 +5,28 @@ import Link from 'next/link'
 export default function Page() {
   const sports = [
     {
+      name: 'Home',
+      src: 'Home'
+    },
+    {
       name: 'Cricket',
       src: 'abc'
     },
     {
       name: 'Football',
-      src: '/dhkf/kjskd'
+      src: '/abc'
     },
     {
       name: 'Kabaddi',
-      src: '/dhkf/kjskjdsfd'
+      src: '/abc'
     },
     {
       name: 'Badminton',
-      src: '/dhdfkf/kjskjdsfd'
+      src: '/abc'
     },
     {
       name: 'Basketball',
-      src: '/dhdf/kjskjdsfd'
+      src: '/abc'
     }
   ];
 
