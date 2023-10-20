@@ -6,23 +6,28 @@ export default function Page() {
   const sports = [
     {
       name: 'Cricket',
-      src: '/cricket'
+      src: '/cricket',
+      image:'https://feeds.abplive.com/onecms/images/uploaded-images/2023/01/15/607285143c6f3fa9671daf910a2d9262167378687009024_original.jpeg?impolicy=abp_cdn&imwidth=720'
     },
     {
       name: 'Football',
-      src: '/football'
+      src: '/football',
+      image: 'https://img.olympics.com/images/image/private/t_s_pog_staticContent_hero_md_2x/f_auto/primary/ngdjbafv3twathukjbq2'
     },
     {
       name: 'Kabaddi',
-      src: '/kabaddi'
+      src: '/kabaddi',
+      image: 'https://ss-i.thgim.com/public/incoming/fjzecq/article66165963.ece/alternates/FREE_1200/315491992_516453253718340_937966576626146612_n.jpg'
     },
     {
       name: 'Badminton',
-      src: '/badminton'
+      src: '/badminton',
+      image: 'https://images.squarespace-cdn.com/content/v1/5bd969d6506fbe4b1a0f5e6b/1613556027347-TNYY9VEX2PRTODIHEP9J/shutterstock_1592944909+-+Badminton+racket+and+shuttlecock+in+motion_1200px+JPEG.jpg'
     },
     {
       name: 'Basketball',
-      src: '/basketball'
+      src: '/basketball',
+      image: 'https://as1.ftcdn.net/v2/jpg/06/29/67/34/1000_F_629673462_C1xnEWxqGU5LCKj1KKQh5u6PSAuHZJun.jpg'
     }
   ];
 
@@ -48,35 +53,35 @@ export default function Page() {
           <h1 className=' text-2xl md:text-4xl font-bold mb-3'>Welcome to LiveSportsDuniya!</h1>
           <p className='text-white text-lg md:text-xl tracking-widest'>Get live updates, scores, and news from your favorite sports</p>
         </div>
-        <div className="sports  mb-20 relative">
+        <div className="sports md:mb-20 relative">
         
           <ul className='flex flex-wrap justify-center py-2'>
             {sports.map((sport, index) => (
               <li key={index} className="w-full md:w-auto text-center mb-4 md:mb-0">
-                <Link className='text-white md:bg-green text-xl mx-5 md:py-3 px-3 md:hover:text-green md:hover:bg-white inline-block md:border-none hover:border-white  border-green border-2' href={sport.src}>
+                <Link className='text-white md:bg-green text-xl mx-6 md:py-3 px-4 py-2 bg-green  hover:text-green hover:bg-white inline-block md:border-none ' href={sport.src}>
                   {sport.name}
                 </Link>
               </li>
             ))}
           </ul>
         </div>
-      <div className='md:py-5 py-4 px-4 flex flex-wrap'>
-        <div className=" md:w-4/12 p-2">
+      <div className='md:py-5 py-4 flex flex-wrap'>
+        <div className=" w-full md:w-2/4 lg:w-4/12 p-2">
          <Image className='mx-auto object-cover h-80' src="https://feeds.abplive.com/onecms/images/uploaded-images/2023/01/15/607285143c6f3fa9671daf910a2d9262167378687009024_original.jpeg?impolicy=abp_cdn&imwidth=720" width={500} height={150} />
         </div>
-        <div className=" w-4/12 p-2">
-         <Image className='mx-auto object-cover h-80' src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS-7Qo1RXAQGnGhuiIeWbNgobGydo_MfogtW8_Dp_cNEFjgVa9YCHWtNZpm-_c7owIZG4&usqp=CAU" width={500} height={150} />
+        <div className="w-full md:w-2/4 lg:w-4/12 p-2">
+         <Image className='mx-auto object-cover h-80' src="https://ss-i.thgim.com/public/incoming/fjzecq/article66165963.ece/alternates/FREE_1200/315491992_516453253718340_937966576626146612_n.jpg" width={500} height={150} />
         </div>
-        <div className=" w-4/12 p-2 ">
+        <div className="w-full md:w-2/4 lg:w-4/12 p-2 ">
          <Image className='mx-auto object-cover h-80' src="https://images.squarespace-cdn.com/content/v1/5bd969d6506fbe4b1a0f5e6b/1613556027347-TNYY9VEX2PRTODIHEP9J/shutterstock_1592944909+-+Badminton+racket+and+shuttlecock+in+motion_1200px+JPEG.jpg" width={500} height={150} />
         </div>
-        <div className=" w-4/12 p-2 ">
+        <div className="w-full md:w-2/4 lg:w-4/12 p-2 ">
          <Image className='mx-auto object-cover h-80' src="https://as1.ftcdn.net/v2/jpg/06/29/67/34/1000_F_629673462_C1xnEWxqGU5LCKj1KKQh5u6PSAuHZJun.jpg" width={500} height={150} />
         </div>
-        <div className=" w-4/12 p-2">
+        <div className="w-full md:w-2/4 lg:w-4/12 p-2">
          <Image className='mx-auto object-cover h-80' src="https://img.olympics.com/images/image/private/t_s_pog_staticContent_hero_md_2x/f_auto/primary/ngdjbafv3twathukjbq2" width={500} height={150} />
         </div>
-        <div className=" w-4/12 p-2 ">
+        <div className="w-full md:w-2/4 lg:w-4/12 p-2 ">
          <Image className='mx-auto object-cover h-80' src="https://images.cnbctv18.com/wp-content/uploads/2022/07/Cricket-Shutterstock-1019x573.jpg?im=FitAndFill,width=1200,height=900" width={500} height={150} />
         </div>
       </div>
