@@ -33,7 +33,7 @@ export default function Page() {
           src="https://w.forfun.com/fetch/2e/2e4effd8f92bd3dba025202c5e724612.jpeg"
           height={1000}
           width={600}
-          className="w-full h-full opacity-30"
+          className="w-full h-full md:opacity-40"
           alt="image"
         />
       </div>
