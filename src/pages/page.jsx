@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import Styles from '../styles/banner.module.scss'
+import { useState } from 'react'
 export default function Page() {
   const sports = [
     {
@@ -30,15 +31,29 @@ export default function Page() {
       image: 'https://as1.ftcdn.net/v2/jpg/06/29/67/34/1000_F_629673462_C1xnEWxqGU5LCKj1KKQh5u6PSAuHZJun.jpg'
     }
   ];
+  // const heroImg = "https://w.forfun.com/fetch/2e/2e4effd8f92bd3dba025202c5e724612.jpeg"
+  const [hoveredItem, setHoveredItem] = useState("https://w.forfun.com/fetch/2e/2e4effd8f92bd3dba025202c5e724612.jpeg");
+  const [active, setActive] = useState({ isActive: false });
+
+  const handleMouseEnter = (img) => {
+    setHoveredItem(img);
+    setActive({ isActive: true });
+  };
+
+  const handleMouseLeave = () => {
+    setHoveredItem("https://w.forfun.com/fetch/2e/2e4effd8f92bd3dba025202c5e724612.jpeg");
+    setActive({ isActive: false });
+  };
+
 
   return (
     <section className=' md:pb-48  hero-banner'>
-       <div className="bgaAbsolute">
+       <div className={`bgaAbsolute imgchange ${active.isActive ? 'active' : ''}`}>
         <Image
-          src="https://w.forfun.com/fetch/2e/2e4effd8f92bd3dba025202c5e724612.jpeg"
+          src={hoveredItem}
           height={1000}
           width={600}
-          className="w-full h-full md:opacity-40"
+          className={`w-full h-full md:opacity-40 `}
           alt="image"
         />
       </div>
@@ -58,7 +73,8 @@ export default function Page() {
           <ul className='flex flex-wrap justify-center py-2'>
             {sports.map((sport, index) => (
               <li key={index} className="w-full md:w-auto text-center mb-4 md:mb-0">
-                <Link className='text-white md:bg-green text-xl mx-6 md:py-3 px-4 py-2 bg-green  hover:text-green hover:bg-white inline-block md:border-none ' href={sport.src}>
+                <Link  onMouseEnter={() => handleMouseEnter(sport.image)}
+                onMouseLeave={() => handleMouseLeave(index)} className='text-white md:bg-green text-xl mx-6 md:py-3 px-4 py-2 bg-green  hover:text-green hover:bg-white inline-block md:border-none ' href={sport.src}>
                   {sport.name}
                 </Link>
               </li>

@@ -180,6 +180,15 @@ a{
 .bgaAbsolute img{
   object-fit: cover;
 }
+.imgchange.active img{
+  opacity: 0.7;
+  transition: all 0.4s ease-in-out;
+}
+.imgchange img{
+  opacity: 0.5;
+  transition: all 0.4s ease-in-out;
+  
+}
 
 .tab-with-content{
   background: #fff;
