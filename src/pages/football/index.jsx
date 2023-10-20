@@ -6,7 +6,7 @@ import Styles from '../../styles/banner.module.scss'
 
 export default function Page() {
   const img =
-    "https://img.olympics.com/images/image/private/t_s_pog_staticContent_hero_md_2x/f_auto/primary/ngdjbafv3twathukjbq2";
+    "/football.webp";
   const title = "FootBall";
   return (
     <div>

@@ -5,7 +5,7 @@ import Styles from "../../styles/banner.module.scss";
 import Banner from "../banner";
 export default function index() {
   const img =
-    "https://ss-i.thgim.com/public/incoming/fjzecq/article66165963.ece/alternates/FREE_1200/315491992_516453253718340_937966576626146612_n.jpg";
+    "/kabaddi.jpeg";
   const title = "Kabaddi";
   return (
     <div>

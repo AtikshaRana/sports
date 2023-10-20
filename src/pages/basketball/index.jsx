@@ -6,7 +6,7 @@ import Banner from "../banner";
 
 export default function index() {
   const img =
-    "https://as1.ftcdn.net/v2/jpg/06/29/67/34/1000_F_629673462_C1xnEWxqGU5LCKj1KKQh5u6PSAuHZJun.jpg";
+    "/basketball.jpeg";
   const title = "basketball";
   return (
     <div>

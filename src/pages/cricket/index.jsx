@@ -5,7 +5,7 @@ import Styles from "../../styles/banner.module.scss";
 import Banner from "../banner";
 export default function index() {
   const img =
-    "https://feeds.abplive.com/onecms/images/uploaded-images/2023/01/15/607285143c6f3fa9671daf910a2d9262167378687009024_original.jpeg?impolicy=abp_cdn&imwidth=720";
+    "/cricket.acif";
   const title = "cricket";
   return (
     <div>

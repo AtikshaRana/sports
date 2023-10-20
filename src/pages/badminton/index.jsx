@@ -5,7 +5,7 @@ import Styles from "../../styles/banner.module.scss";
 import Banner from "../banner";
 export default function index() {
   const img =
-    "https://images.squarespace-cdn.com/content/v1/5bd969d6506fbe4b1a0f5e6b/1613556027347-TNYY9VEX2PRTODIHEP9J/shutterstock_1592944909+-+Badminton+racket+and+shuttlecock+in+motion_1200px+JPEG.jpg";
+    "/badminton.jpeg";
   const title = "Badminton";
   return (
     <div>
