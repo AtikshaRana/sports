@@ -18,7 +18,7 @@ export default function Banner({ image, heading }) {
       <div className="container">
 
         <div className="content text-center p-6 md:bg-transparent">
-          <h1 class=" text-6xl md:text-8xl font-bold mb-3">{heading}</h1>
+          <h1 class=" text-6xl md:text-8xl font-bold mb-3 text-white">{heading}</h1>
         </div>
       </div>
     </section>
