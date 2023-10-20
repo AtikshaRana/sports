@@ -13,22 +13,22 @@ export default function Page() {
     {
       name: 'Football',
       src: '/football',
-      image: 'https://img.olympics.com/images/image/private/t_s_pog_staticContent_hero_md_2x/f_auto/primary/ngdjbafv3twathukjbq2'
+      image: '/football.webp'
     },
     {
       name: 'Kabaddi',
       src: '/kabaddi',
-      image: 'https://ss-i.thgim.com/public/incoming/fjzecq/article66165963.ece/alternates/FREE_1200/315491992_516453253718340_937966576626146612_n.jpg'
+      image: '/kabaddi.jpeg'
     },
     {
       name: 'Badminton',
       src: '/badminton',
-      image: 'https://images.squarespace-cdn.com/content/v1/5bd969d6506fbe4b1a0f5e6b/1613556027347-TNYY9VEX2PRTODIHEP9J/shutterstock_1592944909+-+Badminton+racket+and+shuttlecock+in+motion_1200px+JPEG.jpg'
+      image: '/badminton.jpeg'
     },
     {
       name: 'Basketball',
       src: '/basketball',
-      image: 'https://as1.ftcdn.net/v2/jpg/06/29/67/34/1000_F_629673462_C1xnEWxqGU5LCKj1KKQh5u6PSAuHZJun.jpg'
+      image: '/basketball.jpeg'
     }
   ];
   // const heroImg = "https://w.forfun.com/fetch/2e/2e4effd8f92bd3dba025202c5e724612.jpeg"
@@ -83,7 +83,7 @@ export default function Page() {
         </div>
       <div className='md:py-5 py-4 flex flex-wrap'>
         <div className=" w-full md:w-2/4 lg:w-4/12 p-2">
-         <Image className='mx-auto object-cover h-80' src="/cricket.avif" width={500} height={150} />
+         <Image className='mx-auto object-cover h-80' src="https://feeds.abplive.com/onecms/images/uploaded-images/2023/01/15/607285143c6f3fa9671daf910a2d9262167378687009024_original.jpeg?impolicy=abp_cdn&imwidth=720" width={500} height={150} />
         </div>
         <div className="w-full md:w-2/4 lg:w-4/12 p-2">
          <Image className='mx-auto object-cover h-80' src="/kabaddi.jpeg" width={500} height={150} />
