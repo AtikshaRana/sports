@@ -59,7 +59,9 @@ export default function Page() {
       </div>
       <div className="container ">
         <div className="upper-layout">
-          <Image className='py-2 mx-auto' src="/live.png" width={300} height={100}/>
+          <Link href="/">
+            <Image className='py-2 mx-auto' src="/live.png" width={300} height={100}/>
+          </Link>
         </div>
         <div className="logo-wrap">
           <Image className='mx-auto' src="/sports.png" width={1200} height={200} />
@@ -69,7 +71,6 @@ export default function Page() {
           <p className='text-white text-lg md:text-xl tracking-widest'>Get live updates, scores, and news from your favorite sports</p>
         </div>
         <div className="sports md:mb-20 relative">
-        
           <ul className='flex flex-wrap justify-center py-2'>
             {sports.map((sport, index) => (
               <li key={index} className="w-full md:w-auto text-center mb-4 md:mb-0">
