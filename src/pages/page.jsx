@@ -165,9 +165,9 @@ export default function Page() {
         </div>
         <div className="content py-10 text-center pb-10 lg:pg-20">
           <h1 className=' text-[35px] md:text-[50px] font-bold mb-3'>Maanvi varshney</h1>
-          <h2 className=' text-[28px] md:text-[40px] font-bold mb-3'>Blm academy Padampur devaliya gora parao haldwani (nainital)</h2>
+          <h2 className=' text-[28px] md:text-[40px] font-bold mb-3'>BLM Academy Padampur Devaliya Gora Parao Haldwani, Nainital , Uttarakhand </h2>
           <p className='text-white text-lg md:text-xl tracking-widest'>Class - 7th Ruby</p>
-          <p className='text-white text-lg md:text-xl tracking-widest'>Roll no . 26</p>
+          <p className='text-white text-lg md:text-xl tracking-widest'>Roll Number - 26</p>
         </div>
       </div>
     </section>
