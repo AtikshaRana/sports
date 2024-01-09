@@ -164,7 +164,7 @@ export default function Page() {
           <Image className='mx-auto w-full h-full object-contain md:object-cover' src="/role-of-school-in-a-childs-life.webp" width={800} height={500} />
         </div>
         <div className="content py-10 text-center pb-10 lg:pg-20">
-          <h1 className=' text-[35px] md:text-[50px] font-bold mb-3'>Maanvi varshney</h1>
+          <h1 className=' text-[35px] md:text-[50px] font-bold mb-3'>Maanvi Varshney</h1>
           <h2 className=' text-[28px] md:text-[40px] font-bold mb-3'>BLM Academy Padampur Devaliya Gora Parao Haldwani, Nainital , Uttarakhand </h2>
           <p className='text-white text-lg md:text-xl tracking-widest'>Class - 7th Ruby</p>
           <p className='text-white text-lg md:text-xl tracking-widest'>Roll Number - 26</p>
